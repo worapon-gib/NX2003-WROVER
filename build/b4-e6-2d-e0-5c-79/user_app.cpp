@@ -5,34 +5,36 @@
 #include <WebServer.h>
 
 
-#include <NX2003BUZZER.h>
 
-NX2003BUZZER music = NX2003BUZZER();
+
 
 
 
 
 void setup()
 {
-  music.begin();
+  
+  Serial.begin(115200);
 
-  music.setTempo(145);
+      const int led = 18;
+      WiFi.begin("test","test");
+      pinMode(led, OUTPUT);
+      digitalWrite(led, 0);
+
+      while(WiFi.status() != WL_CONNECTED){
+        digitalWrite(led, 0);
+        delay(200);
+        digitalWrite(led, 1);
+        delay(200);
+        digitalWrite(led, 0);
+        delay(200);
+        digitalWrite(led, 1);
+        delay(200);
+      }
 }
 void loop()
 {
-    music.tone(587,500);
-  music.tone(932,1000);
-  music.tone(587,500);
-  music.tone(932,1000);
-  music.tone(622,500);
-  music.tone(587,1000);
-  music.tone(554,500);
-  music.tone(880,1000);
-  music.tone(932,1000);
-  music.tone(587,1000);
-  music.tone(554,1000);
-  music.tone(554,500);
-  music.tone(587,1000);
+    Serial.println((WiFi.localIP().toString()));
 
   
 }

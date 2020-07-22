@@ -222,7 +222,7 @@ module.exports = {
 		wifi,
 		{
 			name: 'Button',
-			icon: `file:///${dirIcon}/static/icons/button1.png`,
+			icon: `file:///${dirIcon}/static/icons/button.png`,
 			index: 2,
 			color: "230",
 			blocks:['button']

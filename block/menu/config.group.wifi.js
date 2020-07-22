@@ -6,8 +6,9 @@ module.exports = {
     color: "30",
     icon: `file:///${dirIcon}/static/icons/wifi.png`,
     blocks: [
-            'wifi_connect',    
-            'wifi_ap',
+            'block_setup_wifi',
+            'block_wifi_connect',    
+            'block_wifi_ap',
             // {
             //     xml : 
             //         `<block type="wifi_http_get">
@@ -33,11 +34,11 @@ module.exports = {
             //             </value>
             //         </block>`
             // },                   
-            'wifi_start_server',
-            'wifi_server_on',
+            'block_wifi_start_server',
+            'block_wifi_server_on',
             {
                 xml : 
-                    `<block type="wifi_server_send">
+                    `<block type="block_wifi_server_send">
                         <value name="text">
                             <shadow type="basic_string">
                                 <field name="VALUE">Hello world!</field>
@@ -46,9 +47,9 @@ module.exports = {
                     </block>`
             },
             
-            'wifi_get_ip_addr',
-            'wifi_get_ap_ip_addr',
-            'wifi_get_arg'
+            'block_wifi_get_ip_addr',
+            'block_wifi_get_ap_ip_addr',
+            'block_wifi_get_arg'
         ]
   };
   
