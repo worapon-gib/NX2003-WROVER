@@ -1,5 +1,5 @@
 module.exports = {
-    name : 'NX2003 WROWER',
+    name : 'nx2003-wrover',
     platform : 'arduino-esp32',
     title : 'NX2003 WROWER',
     description : 'NEXPIE 16MB Flash 8 MB PSRAM.\n',
