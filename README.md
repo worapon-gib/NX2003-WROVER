@@ -1,1 +1,1 @@
-# NX2003-WROVER
+# nx2003-kidbright
