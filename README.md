@@ -1,1 +1,1 @@
-# nx2003-kidbright
+# nx2003
