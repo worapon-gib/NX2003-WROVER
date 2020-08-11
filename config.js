@@ -8,5 +8,5 @@ module.exports = {
     email : 'ch.ee.psu@outlook.com',
     git : 'https://github.com/worapon-gib/NX2003-WROVER/',
     image : '/static/FRONT BOARD.png',
-    version : '1.1.0'
+    version : '1.1.3'
 };
